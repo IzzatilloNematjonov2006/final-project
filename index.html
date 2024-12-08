@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Izzatillo's personal portfolio showcasing projects, skills, and contact information.">
+  <title>Izzatillo's Portfolio</title>
+  <link rel="stylesheet" href="design/style.css">
+  <link rel="stylesheet" href="design/home_style.css">
+  <link rel="stylesheet" href="design/contact_style.css">
+  <link rel="stylesheet" href="design/projects_style.css">
+  <link rel="stylesheet" href="design/about_style.css">
+  <link rel="icon" type="image/icon type" href="img/logo.png">
+</head>
+<body>
+
+  <!-- Used external loader-->
+   <div id="preloader" class="preloader-container">
+      <div class="terminal-loader" id="preloader">
+        <div class="terminal-header">
+          <div class="terminal-title">Status</div>
+          <div class="terminal-controls">
+            <div class="control close"></div>
+            <div class="control minimize"></div>
+            <div class="control maximize"></div>
+          </div>
+        </div>
+        <div class="text">Loading...</div>
+      </div>
+    </div>
+
+  <header class="home-section" id="home-section">
+    <div id="main-content">
+      <nav class="nav-bar">
+        <a href="#home-section" class="logo"><img src="img/logo-removebg-preview.png" alt="logo_picture"></a>
+        <div class="nav-links">
+          <a href="#home-section" class="nav-link" aria-label="Go to Home Section">Home</a>
+          <a href="#about" class="nav-link" aria-label="Go to About Section">About</a>
+          <a href="#projects" class="nav-link" aria-label="Go to Projects Section">Projects</a>
+          <a href="#contact" class="nav-link" aria-label="Go to Contact Section">Contact</a>
+        </div>
+        <div class="hamburger-menu" id="hamburger" onclick="toggleNavbar()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+      </nav>
+      <div id="dropdown-navbar" class="hidden">
+        <div class="dropdown-button" onclick="toggleDropdown()">
+          <span class="dropdown-icon">&#9776;</span>
+          <span class="dropdown-text">Menu</span>
+        </div>
+        <div id="dropdown-options" class="hidden-options">
+          <a href="#home-section" aria-label="Go to Home Section">Home</a>
+          <a href="#about" aria-label="Go to About Section">About</a>
+          <a href="#projects" aria-label="Go to Projects Section">Projects</a>
+          <a href="#contact" aria-label="Go to Contact Section">Contact</a>
+        </div>
+      </div>
+    </div>
+
+          <!-- Used external source (template) that's why classes are also weirdly names -->
+        <div class="movin" role="marquee" aria-label="Izzatillo's Portfolio">
+          <ul>
+            <li><span class="moving_text">Izzatillo</span></li>
+            <li><span class="moving_text">Nematjonov</span></li>
+            <li><span class="moving_text">-</span></li>
+            <li><span class="moving_text">Izzatillo</span></li>
+            <li><span class="moving_text">Nematjonov</span></li>
+            <li><span class="moving_text">-</span></li>
+            <li><span class="moving_text">Izzatillo</span></li>
+            <li><span class="moving_text">Nematjonov</span></li>
+            <li><span class="moving_text">-</span></li>
+            <li><span class="moving_text">Izzatillo</span></li>
+            <li><span class="moving_text">Nematjonov</span></li>
+            <li><span class="moving_text">-</span></li>
+          </ul>
+          <ul aria-hidden="true">
+            <li><span class="moving_text">Izzatillo</span></li>
+            <li><span class="moving_text">Nematjonov</span></li>
+            <li><span class="moving_text">-</span></li>
+            <li><span class="moving_text">Izzatillo</span></li>
+            <li><span class="moving_text">Nematjonov</span></li>
+            <li><span class="moving_text">-</span></li>
+            <li><span class="moving_text">Izzatillo</span></li>
+            <li><span class="moving_text">Nematjonov</span></li>
+            <li><span class="moving_text">-</span></li>
+            <li><span class="moving_text">Izzatillo</span></li>
+            <li><span class="moving_text">Nematjonov</span></li>
+            <li><span class="moving_text">-</span></li>
+          </ul>      
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="about-section">
+        <div class="about-container">
+          <div class="about-content">
+            <h2>About Me</h2>
+            <p>I am a frontent developer with who creates visually striking and user-friendly websites. My skills include HTML, CSS, and JavaScript.</p>
+            <div class="skills">
+              <div class="skill">
+                <span>HTML</span>
+                <div class="progress-bar">
+                  <div class="progress html"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>CSS</span>
+                <div class="progress-bar">
+                  <div class="progress css"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>JavaScript</span> 
+                <div class="progress-bar">
+                  <div class="progress js"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-picture">
+            <img src="img/izzatillo-pic.png" alt="Izzatillo's picture">
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <div class="projects-container">
+          <h2>Projects</h2>
+          <div class="view">
+            <div class="block">
+              <a href="https://izzatillonematjonov2006.github.io/lab-1/" target="_blank">
+                <div class="project-item" style="background-image: url('path-to-thumbnail1.jpg');">
+                  <img src="img/lab1.png" alt="Project 1 Thumbnail">
+                  <h3>Lab 1</h3>
+                  <p>Lab 1 submission for MEDIART 213 at Duke Kunshan University. Built using HTML and CSS.</p>
+                </div>
+              </a>
+            </div>
+            <div class="block">
+              <a href="https://izzatillonematjonov2006.github.io/lab-2/" target="_blank">
+                <div class="project-item">
+                  <img src="img/lab2.png" alt="Project 2 Thumbnail">
+                  <h3>Lab 2</h3>
+                  <p>Lab 2 submission for MEDIART 213 at Duke Kunshan University. Built using HTML and CSS.</p>
+                </div>
+              </a>
+            </div>
+            <div class="block">
+              <a href="https://izzatillonematjonov2006.github.io/LAB6/" target="_blank">
+                <div class="project-item">
+                  <img src="img/lab6.png" alt="Project 3 Thumbnail">
+                  <h3>Lab 6</h3>
+                  <p>Lab 6 submission for MEDIART 213 at Duke Kunshan University. Built using HTML and CSS..</p>
+                </div>
+              </a>
+            </div>
+            <div class="block">
+              <a href="https://izzatillonematjonov2006.github.io/lab-7/" target="_blank">
+                <div class="project-item">
+                  <img src="img/lab7.png" alt="Project 4 Thumbnail">
+                  <h3>Lab 7</h3>
+                  <p>Lab 7 submission for MEDIART 213 at Duke Kunshan University. Built using JavaScript.</p>
+                </div>
+              </a>
+            </div>
+            <div class="block">
+              <a href="https://izzatillonematjonov2006.github.io/lab-8/" target="_blank">
+                <div class="project-item">
+                  <img src="img/lab8.png" alt="Project 5 Thumbnail">
+                  <h3>Lab 8</h3>
+                  <p>Lab 8 submission for MEDIART 213 at Duke Kunshan University. Built using HTML and CSS, and JavaScript.</p>
+                </div>
+              </a>
+            </div>
+            <div class="block">
+              <a href="https://izzatillonematjonov2006.github.io/MEDIART213-LOGBOOK/" target="_blank">
+                <div class="project-item">
+                  <img src="img/logbook.png" alt="Project 6 Thumbnail">
+                  <h3>LogBook</h3>
+                  <p>LogBook submission for MEDIART 213 at Duke Kunshan University. Built using HTML and CSS.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="contact-content">
+          <h2>Get in Touch</h2>
+          <p>If you have any questions or feedback, feel free to reach out. I'd love to hear from you!</p>
+          <form action="https://formspree.io/f/movqzjjr" method="post">
+            <div class="input-group">
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="input-group">
+              <label for="email">Your Email:</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="input-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script src="js/dropdown.js"></script>
+    <script src="js/eyes_track.js"></script>
+    <script src="js/interact.js"></script>
+
+    <footer class="footer" role="contentinfo">
+      <p>© 2024 Izzatillo. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

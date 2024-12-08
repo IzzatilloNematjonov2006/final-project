@@ -1,0 +1,152 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Space Grotesk", sans-serif;
+    padding: 0;
+    line-height: 1.6;
+    height: 100vh;
+    color: #fff;
+  }
+  html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+  }  
+  #logo_main{
+    width: 1%;
+    display: absolute;
+  }
+  @keyframes blinkCursor {
+    50% {
+      border-right-color: transparent;
+    }
+  }
+  @keyframes typeAndDelete {
+    0%, 10% {
+      width: 0;
+    }
+    45%, 55% {
+      width: 6.2em;
+    }
+    90%, 100% {
+      width: 0;
+    }
+  }
+  .preloader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+  }
+  .terminal-loader {
+    position: relative;
+    border: 0.1em solid #333;
+    background-color: #1a1a1a;
+    color: #0f0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: clamp(1em, 2vw, 2em);
+    padding: 3em 1em;
+    width: min(90vw, 10em);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .terminal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1.5em;
+    background-color: #333;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 0 0.4em;
+    box-sizing: border-box;
+  }
+  .terminal-controls {
+    float: right;
+  }
+  .control {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    margin-left: 0.4em;
+    border-radius: 50%;
+    background-color: #777;
+  }
+  .control.close {
+    background-color: #e33;
+  }
+  .control.minimize {
+    background-color: #ee0;
+  }
+  .control.maximize {
+    background-color: #0b0;
+  }
+  .terminal-title {
+    float: left;
+    line-height: 1.5em;
+    color: #eee;
+  }
+  .text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.2em solid green;
+    animation: typeAndDelete 6s steps(11) infinite,
+      blinkCursor 0.9s step-end infinite alternate;
+    margin-top: 1.5em;
+  }
+  #preloader {
+    transition: opacity 1s ease;
+  }
+  #preloader.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  form input, form textarea {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  form input:focus, form textarea:focus {
+    background-color: #444;
+    border-color: #ff6f61;
+  }
+  section {
+    position: relative;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideIn 1s forwards;
+    min-height: 100vh;
+  }
+  @keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }

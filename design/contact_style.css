@@ -1,0 +1,90 @@
+  .contact-section {
+    width: 100%;
+    height: auto;
+    padding: 6rem 2rem;
+    background: linear-gradient(to bottom, #d0f4f1, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .contact-section p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    color: #f9f9f9;
+  }
+  .contact-section .contact-content {
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  .contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-group label {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .input-group input:focus,
+  .input-group textarea:focus {
+    outline: none;
+    border: 2px solid #ff6f61;
+    color: white;
+  }
+  button {
+    padding: 14px 28px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #d85b4f;
+  }
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 4rem 1rem;
+    }
+    .contact-section h2 {
+      font-size: 2rem;
+    }
+    .contact-section p {
+      font-size: 1rem;
+    }
+  }
